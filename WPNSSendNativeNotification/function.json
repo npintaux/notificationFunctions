@@ -1,0 +1,25 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in"
+    },
+    {
+      "name": "return",
+      "type": "http",
+      "direction": "out"
+    },
+    {
+      "name": "notification",
+      "type": "notificationHub",
+      "tagExpression": "",
+      "hubName": "<Your NotificationHub service name>",
+      "connection": "<Your NotificationHub Default connection string>",
+      "platform": "gcm",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
